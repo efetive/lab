@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#close").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
+</head>
+<body>
+<a href="javascript:;" id="show">If you click on me, I will disappear.</a>
+<p style="display:none;z-index:99;position:absolute;width:250px;height:125px;margin-left:-125px;left:50%;top:50%;margin-top:-62px;border:3px solid #ccc;background:yellow;">Click me away! Click me too! <?php echo $linhas['id']; ?> <a id="close" href="javascript:;">fechar</a></p>
+</body>
+</html>
